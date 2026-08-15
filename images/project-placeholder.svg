@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" role="img" aria-labelledby="title desc">
+  <title id="title">Coyote CI project preview placeholder</title><desc id="desc">Abstract diagram of a continuous integration pipeline.</desc>
+  <rect width="800" height="580" fill="#183c29"/>
+  <g fill="none" stroke="#79c69c" stroke-width="3" opacity=".8"><path d="M130 184h180M310 184l80 105M310 184l80-105M470 79h200M470 289h200M470 499h200M390 289l80 210"/></g>
+  <g fill="#eef3ee"><rect x="70" y="146" width="120" height="76" rx="5"/><rect x="310" y="41" width="160" height="76" rx="5"/><rect x="310" y="251" width="160" height="76" rx="5"/><rect x="310" y="461" width="160" height="76" rx="5"/><rect x="670" y="41" width="90" height="76" rx="5"/><rect x="670" y="251" width="90" height="76" rx="5"/><rect x="670" y="461" width="90" height="76" rx="5"/></g>
+  <g fill="#183c29" font-family="ui-monospace, monospace" font-size="17"><text x="96" y="190">commit</text><text x="346" y="86">build</text><text x="340" y="296">test</text><text x="330" y="506">package</text><text x="686" y="86">cache</text><text x="683" y="296">deploy</text><text x="686" y="506">artifact</text></g>
+</svg>

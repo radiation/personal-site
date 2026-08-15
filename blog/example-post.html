@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A placeholder article from Bryan Choate.">
+  <!-- TODO: Replace title, description, canonical URL, and OpenGraph fields for each post. -->
+  <meta property="og:title" content="Building Coyote CI | Bryan Choate">
+  <meta property="og:description" content="A placeholder article demonstrating the static blog format.">
+  <meta property="og:type" content="article">
+  <title>Building Coyote CI | Bryan Choate</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="shell header-inner">
+    <a class="wordmark" href="../" aria-label="Bryan Choate home"><span>BC</span><span class="wordmark-name">Bryan Choate</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="visually-hidden">Toggle navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation"><a href="../#work">Work</a><a href="./">Writing</a><a href="../#about">About</a><!-- TODO: Replace placeholder social URLs. --><a href="https://github.com/" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a><button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle color theme"><span class="theme-icon" aria-hidden="true">◐</span></button></nav>
+  </div></header>
+  <main id="main-content" class="blog-main article">
+    <a class="back-link" href="./">← All writing</a>
+    <header class="article-header"><p class="eyebrow">Coyote CI · Placeholder article</p><h1>Building Coyote CI: Why Build Another CI/CD System?</h1><p class="post-date">Placeholder date · 6 min read</p></header>
+    <!-- Replace this demonstration content with the article. -->
+    <p>A delivery system is never merely a row of boxes between a commit and production. It is an interface between teams, infrastructure, and the operating habits that determine whether software can move with confidence.</p>
+    <p>This sample article exists to establish a deliberately simple static writing format. Each new post can begin with this file, a title and metadata update, and a link added to <a href="index.html">the writing index</a>.</p>
+    <h2>Start with the experience</h2>
+    <p>The best platforms make the common path legible. They preserve room for complex work without demanding that every engineer first become an expert in the systems beneath it.</p>
+    <blockquote><p>Good developer experience is not a thin layer over complexity. It is a sustained decision about where complexity belongs.</p></blockquote>
+    <h3>Useful constraints</h3>
+    <ul><li>A pipeline definition should live with the source it builds.</li><li>Feedback should arrive while it can still change a decision.</li><li>Artifacts and caches should feel like durable parts of the system.</li></ul>
+    <h2>Make the implementation inspectable</h2>
+    <p>Small, explicit interfaces make a platform easier to operate and evolve. A configuration file might begin as simply as this:</p>
+    <pre><code>pipeline:
+  name: verify
+  steps:
+    - run: go test ./...
+    - run: go build ./...</code></pre>
+    <p>That clarity matters as much at the command line as it does in the service implementation. In a static site, it also means leaving the source easy to read, host, and change.</p>
+    <p>Use <code>git diff</code> to review a change before publishing it, then let the actual work supply the next article.</p>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><p>© <span id="year">2026</span> Bryan Choate</p><div><a href="../">Home</a><a href="mailto:hello@example.com">hello@example.com</a></div></div></footer>
+</body>
+</html>

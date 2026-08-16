@@ -21,10 +21,8 @@
     <div class="frame nav-frame">
       <a class="wordmark" href="#top" aria-label="Bryan Choate home">BC<span> / Bryan Choate</span></a>
       <nav aria-label="Primary navigation">
-        <!-- TODO: Replace these placeholder URLs. -->
         <a href="https://github.com/radiation" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/brchoate" rel="noreferrer">LinkedIn</a>
-        <a href="blog/">Blog</a>
         <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle color theme"><span aria-hidden="true">◐</span></button>
       </nav>
     </div>
@@ -35,13 +33,12 @@
       <div class="hero-copy">
         <p class="kicker">Platform engineering · Developer experience · AI enablement</p>
         <h1 id="hero-title">Bryan Choate</h1>
-        <p class="positioning">Engineering leader. Platform builder. Occasional yak shaver.</p>
-        <p class="intro">I build developer platforms, CI/CD systems, cloud infrastructure, and AI-enabled engineering tools — at enterprise scale and for fun.</p>
+        <p class="positioning">Engineering leader. Platform builder. <span>Occasional yak shaver.</span></p>
+        <p class="intro">I build developer platforms, CI/CD systems, cloud infrastructure, and AI-enabled engineering tools at enterprise scale (and just for kicks).</p>
+        <p class="proof">Previously Disney Entertainment <span aria-hidden="true">·</span> Platforms supporting 5,000+ engineers <span aria-hidden="true">·</span> 30,000+ services</p>
         <div class="hero-links" aria-label="Find Bryan online">
           <a href="https://github.com/radiation" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           <a href="https://www.linkedin.com/in/brchoate" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-          <!-- TODO: Replace these placeholder URLs. -->
-          <a href="blog/">Blog <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <figure class="portrait">
@@ -51,23 +48,35 @@
 
     <section id="work" class="work frame" aria-labelledby="work-title">
       <header class="work-heading"><p class="kicker">Selected work</p><h2 id="work-title">Things I've Built</h2></header>
-      <!-- Copy an article.project to add a project. -->
       <div class="projects">
         <article class="project project-featured">
-          <div><p class="project-index">01 / Open source</p><h3>Coyote CI</h3></div>
-          <div class="project-detail">
-            <p>An open-source CI/CD platform built from scratch, with distributed workers, parallel builds, artifacts, remote caching, GitHub integration, RBAC, notifications, and a CLI.</p>
-            <p class="project-tag">Go · PostgreSQL · GCP</p>
-            <p class="project-links"><a href="https://coyote-ci.bryanchoate.com/" rel="noreferrer">Project <span aria-hidden="true">↗</span></a><a href="https://github.com/" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></p>
+          <div class="project-body">
+            <p class="project-index">01 / Open source</p><h3>Coyote CI</h3>
+            <p>An open-source CI & artifact storage platform built from zero with horizontally scalable masters & workers, parallel builds, artifacts, remote caching, VCS integration, RBAC, notifications, and a native, agent-friendly CLI.</p>
           </div>
+          <div class="project-footer"><p class="project-tag">Go · TypeScript</p><p class="project-links"><a href="https://coyote-ci.bryanchoate.com/" rel="noreferrer">Demo <span aria-hidden="true">↗</span></a><a href="https://github.com/" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></p></div>
         </article>
-        <article class="project"><p class="project-index">02 / Tooling</p><h3>AI Job Finder</h3><p>AI-assisted tooling for finding, filtering, and evaluating engineering opportunities.</p><!-- TODO: Replace AI Job Finder URL. --><p class="project-links"><a href="https://example.com/" rel="noreferrer">Project <span aria-hidden="true">↗</span></a></p></article>
-        <article class="project"><p class="project-index">03 / Application</p><h3>Agendable</h3><p>A lightweight application built around FastAPI.</p><!-- TODO: Replace Agendable URL. --><p class="project-links"><a href="https://example.com/" rel="noreferrer">Project <span aria-hidden="true">↗</span></a></p></article>
-        <article class="project"><p class="project-index">04 / Analysis</p><h3>Odds Arbitrage</h3><p>Sports odds analysis and arbitrage tooling.</p><!-- TODO: Replace Odds Arbitrage URL. --><p class="project-links"><a href="https://example.com/" rel="noreferrer">Project <span aria-hidden="true">↗</span></a></p></article>
+        <article class="project">
+          <div class="project-body">
+            <p class="project-index">02 / Tooling</p><h3>AI Job Finder</h3>
+            <p>AI-assisted tooling for finding, filtering, and evaluating engineering opportunities.</p>
+          </div>
+          <div class="project-footer"><p class="project-tag">Python · FastAPI · HTMX</p><p class="project-links"><a href="https://jobs.bryanchoate.com" rel="noreferrer">Demo <span aria-hidden="true">↗</span></a></p></div>
+        </article>
+        <article class="project">
+          <div class="project-body"><p class="project-index">03 / Application</p><h3>Agendable</h3><p>A lightweight application built around FastAPI.</p></div>
+          <!-- TODO: Replace Agendable URL. -->
+          <div class="project-footer"><p class="project-tag">FastAPI</p><p class="project-links"><a href="https://example.com/" rel="noreferrer">Demo <span aria-hidden="true">↗</span></a></p></div>
+        </article>
+        <article class="project">
+          <div class="project-body"><p class="project-index">04 / Analysis</p><h3>Odds Arbitrage</h3><p>Sports odds analysis and arbitrage tooling.</p></div>
+          <!-- TODO: Replace Odds Arbitrage URL. -->
+          <div class="project-footer"><p class="project-tag">&nbsp;</p><p class="project-links"><a href="https://example.com/" rel="noreferrer">Demo <span aria-hidden="true">↗</span></a></p></div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="frame footer-frame"><p>Bryan Choate <span aria-hidden="true">·</span> New York</p><div><!-- TODO: Replace placeholder social URLs. --><a href="https://github.com/" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a></div></div></footer>
+  <footer class="site-footer"><div class="frame footer-frame"><p>Bryan Choate <span aria-hidden="true">·</span> New York</p><div><!-- TODO: Replace placeholder social URLs. --><a href="https://github.com/radiation" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/brchoate" rel="noreferrer">LinkedIn</a></div></div></footer>
 </body>
 </html>

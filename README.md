@@ -1,14 +1,14 @@
 # Bryan Choate personal site
 
-A dependency-free static personal and professional site. It uses semantic HTML, modern CSS, and a small progressive-enhancement script, so it can be served by any static host.
+A dependency-free, single-page personal site. It uses semantic HTML, modern CSS, and a small progressive-enhancement script, so it can be served by any static host.
 
 ## Structure
 
-- `index.html`: homepage and project/work sections
-- `css/styles.css`: theme tokens, layout, responsive rules, and blog styles
-- `js/main.js`: theme preference and mobile navigation only
-- `images/`: temporary portrait, project, and favicon SVG placeholders
-- `blog/`: static writing index and an example post to copy
+- `index.html`: hero, featured work, and footer
+- `css/styles.css`: theme tokens and responsive single-page layout
+- `js/main.js`: manual theme preference only
+- `images/`: portrait assets and the favicon
+- `blog/`: linked static writing pages
 
 ## Run locally
 
@@ -22,11 +22,10 @@ Then open `http://localhost:4173`.
 
 ## First replacements
 
-1. Replace all `https://example.com/`, `https://github.com/`, and `https://www.linkedin.com/` placeholders in the HTML files with real URLs. They are marked with `TODO` comments.
-2. Replace `hello@example.com` with the desired public email address.
-3. Add professional and casual images in `images/`, then update the two `<img>` elements in `index.html`. Keep explicit `width` and `height` attributes to prevent layout shift.
-4. Update the placeholder dates and project descriptions as their public details are ready.
-5. Replace the OpenGraph URL and image fields in `index.html` when the production domain is known.
+1. Replace all `https://example.com/`, `https://github.com/`, and `https://www.linkedin.com/` placeholders in `index.html` with real URLs. They are marked with `TODO` comments.
+2. Add `images/Bryan-Choate-12.jpg`, then change the hero image source from `profile-placeholder.svg` to that preferred portrait. The layout already provides intentional responsive cropping.
+3. Optionally add `Bryan-Choate-10.jpg` and `Bryan-Choate-5.jpg` for future use; this compact page intentionally uses only the primary portrait.
+4. Replace the OpenGraph URL and image fields in `index.html` when the production domain is known.
 
 ## Add a project
 

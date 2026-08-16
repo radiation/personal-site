@@ -1,4 +1,5 @@
 #!/bin/sh
+set -eu
 
 TAG="$(git rev-parse --short HEAD)"
 IMAGE="us-central1-docker.pkg.dev/bryanchoate/bootstrap/personal-site:${TAG}"

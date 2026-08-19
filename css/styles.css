@@ -239,7 +239,7 @@ h1 {
 
 .portrait {
   position: relative;
-  width: min(100%, 18rem);
+  width: min(100%, 17rem);
   aspect-ratio: 4 / 5;
   margin: 0;
 }
@@ -264,7 +264,7 @@ h1 {
 }
 
 .work {
-  padding-block: 0.9rem 1rem;
+  padding-block: 0.5rem 0.6rem;
   border-top: 1px solid var(--line);
 }
 
@@ -369,6 +369,31 @@ h2 {
   font-size: clamp(1.4rem, 2.25vw, 1.8rem);
 }
 
+.band-strip {
+  border-top: 1px solid var(--line);
+}
+
+.band-strip-inner {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.6fr) 1.4fr;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding-block: 0.6rem;
+}
+
+.band-strip h2 {
+  align-self: start;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.band-strip p {
+  max-width: 52rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
 }
@@ -415,6 +440,12 @@ h2 {
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .band-strip-inner {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding-block: 1rem;
   }
 }
 
